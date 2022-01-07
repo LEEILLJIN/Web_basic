@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <title>Fornt-end</title>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTZ6F06ZWQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JTZ6F06ZWQ');
+    </script>
+    <link rel="stylesheet" href ="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src = "color.js"></script>
+</head>
+
+<body> 
+    <input type=button  style="WIDTH: 60px; HEIGHT: 30px; margin-top: 1px; float: right;"  value="night" onclick="
+    nightDayHandler(this);
+ ">
+    <h1><a href="index.html">Front-end</a></h1>
+    <div id ="grid">
+        <ol id ="f_list">
+            <li><a href="1.html" >HTML</a></li>
+            <li><a href="2.html" >CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2>CSS</h2>
+            <img src="coding.jpg" width="50%">
+            <p><a href="https://www.w3.org/Style/CSS/read.en.html" target="_blank">종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)</a>는 마크업 언어가 실제 표시되는 방법을 
+                기술하는 언어로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 
+                정의할 때의 자유도가 높다.
+            </p>
+
+            <p>
+                마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. <br>
+                즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.<br>
+                현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 
+                제작한 이미지를 대체할 수 있는 기능이 추가되었다. <br>
+                또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 
+                대체하고 있다.
+            </p>
+            <h2>생활코딩 CSS</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ok0bBJPtgJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                <strong>2021년 3월 8일 오후 6시 41분</strong><br>
+                생활코딩 CSS편을 모두 수강하였다. 책에 나와있는 권장 진도에 따르면 일주일 전에 수강을 끝냈어야했지만 내 나태한 성격이 어디 가겠는가 <br>
+                CSS는 선택자와 속성이 뿌리를 이루고 있는 디자인 언어이다. 웹 디자인에 관한 내용을 배웠지만 그보다 코드의 중복제거의 중요성을 인식하게 된 수업이다.<br>
+            </p>
+            <ol>
+                <li> 선택자, 속성
+                    <p>
+                    선택자는 어떠한 태그, class, ID로 지정하여 style 태그를 사용하는 것이고 속성은 CSS코드를 넣고자 하는 그 부분에 바로 넣을 수 있는 성격을 지니고 있다.<br>
+                    주의해야할 점은 선택자에 우선 순위가 있다는 점이다. 이 우선 순위는 ID 선택자, class 선택자, 태그 선택자 순서이다.
+                    </p>
+                </li>
+            
+                <li>박스모델
+                    <p>
+                        박스모델 < h1 > 태그는 화면 전체(block level element)를 쓰고 < a > 태그는 자기 자신의 콘텐츠 크기(inline element)만큼 부피를 가진다.<br>
+                        하지만 이 초기값은 style태그를 통해 얼마든지 바꿀 수 있다. 그 방법은 다음과 같다.
+                        <ul>
+                            <li>display : inline; -> 자신의 부피만큼 차지하라.</li>
+                            <li>display : block; -> 화면 전체를 차지하라.</li>
+                            <li>display : none; -> 태그를 보이지 않게 하라.</li>
+        
+                        </ul>
+                        <br>또한 padding, margin과 같은 개념도 학습하였다.<br>
+                        <img src="css.png" width="50%">
+                    </p>
+        
+                </li>
+           
+                <li>Grid
+                    <p>
+                        그리드(grid)는 웹 사이트를 분할하여 나타낼 수 있도록 하는 개념이다. 기본적으로 < div >, < span > 태그를 이용한다.<br>
+                        grid를 적용하는 법은 다음과 같다.<br>
+                        <ul>
+                            <li>display : grid; -> 항목들의 레이아웃을 grid형식으로 지정한다.</li>
+                            <li>grid-template-columns : __ __ -> 각 항목들의 부피(ex)150px, 1fr(1fr은 나머지 전체를 의미))</li>
+        
+                        </ul>
+                    </p>
+                </li>
+           
+
+                <li>반응형 웹
+                    <p>
+                        반응형 웹은 다양한 화면의 크기에 따라 웹의 형태를 변화시키는 웹을 말한다.<br>
+                        현대사회에서 웹을 사용하는 기기가 컴퓨터, 스마트폰 등등 다양한만큼 기본적인 기술이라고 할 수 있다.<br>
+                        <ul>
+                            ex)미디어 쿼리<br>
+                            <li>@media(min-width:800px) : 화면이 800px보다 큰 경우 하위 코드를 실행한다.</li>
+                            <li>@media(max-width:800px) : 화면이 800px보다 작은 경우 하위 코드를 실행한다.</li>
+        
+                        </ul>
+                    </p>
+                </li>
+
+                <li>중복제거
+                    <p>
+                        맨 처음 말했듯이 CSS부분을 수강하면서 코드의 중복제거의 중요성에 대해 알게되었다.<br>
+                        여러 html파일에 같은 CSS코드가 있다면 여러번 중복하여 쓰지말고 CSS파일을 하나 만들어 html파일에서 참조하도록 하는것이 효율적인 코드 작성법이다.<br>
+                        그 방법은 다음과 같다.
+                        <ul>
+                            <li>"style.css"파일이 있다고 가정하면 < link rel = "stylesheet" href = "style.css" >를 html 파일의 < head >태그 안에 작성한다.</li>
+        
+                        </ul>
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
